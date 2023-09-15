@@ -33,7 +33,7 @@ int main()
 	do
 	{
 		menu();
-		printf("please input your choose: ");
+		printf("请输入你的选择: ");
 		scanf("%d",&input);
 		switch (input)
 		{
@@ -50,12 +50,15 @@ int main()
 			break;
 		case SEARCH:
 			printf("查找信息:\n");
+			search_message(&mess);
 			break;
 		case MODIFY:
 			printf("修改信息:\n");
+			modify_message(&mess);
 			break;
 		case SORT:
 			printf("排序信息:\n");
+			sort_message(&mess);
 			break;
 		case PRINT:
 			printf("打印信息：\n");

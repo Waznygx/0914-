@@ -5,7 +5,6 @@
 
 #define max_name 12
 #define max_sex 10
-#define max_tele 20
 #define max_address 30
 #define max_person 10000
 
@@ -32,4 +31,11 @@ void init_message(message* mess);
 void add_message(message* mess);
 void print_message(const message* mess);//根本没想到要固定mess
 void delete_message(message* mess);
-int find_name(message* mess,char name[]);//没考虑到删除、修改、查询都要用到“查找”指令
+void search_message(message* mess);
+int find_all_names(message* mess, char name[], int ret[]);//没考虑到删除、修改、查询都要用到“查找”指令
+void modify_message(message* mess);
+void sort_message(message* mess);
+void sort_menu();
+void sort1(message* mess);
+void sort2(message* mess);
+
